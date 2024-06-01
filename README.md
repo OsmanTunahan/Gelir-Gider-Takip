@@ -2,7 +2,7 @@
 Tüm ayların gelir gider takibinin kolay bir şekilde yapılabileceği Python otomasyonu.
 <hr>
 
-## Veri Tabanı Şeması
+## Veri Tabanı Şeması
 ```sql
 CREATE TABLE companies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
