@@ -5,19 +5,19 @@ Tüm ayların gelir gider takibinin kolay bir şekilde yapılabileceği Python o
 ## Veri Tabanı Şeması
 ```sql
 CREATE TABLE companies (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY,
     name TEXT NOT NULL UNIQUE
 );
 
 CREATE TABLE income (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY,
     amount REAL NOT NULL,
     date TEXT NOT NULL,
     description TEXT
 );
 
 CREATE TABLE expenses (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY,
     amount REAL NOT NULL,
     date TEXT NOT NULL,
     description TEXT,
