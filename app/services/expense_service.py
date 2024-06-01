@@ -14,3 +14,10 @@ def get_expense(id):
         cursor.execute("SELECT * FROM expenses WHERE id = ?", (id,))
         row = cursor.fetchone()
         return Expense(row[0], row[1], row[2], row[3], row[4]) if row else None
+    
+def get_all_expenses():
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM expenses")
+        rows = cursor.fetchall()
+        return [Expense(row[0], row[1], row[2], row[3], row[4]) for row in rows]
