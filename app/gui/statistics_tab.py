@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
-from utils.stats import calculate_monthly_statistics, calculate_company_expense_statistics
-from services.company_service import get_all_companies
+from app.utils.stats import calculate_monthly_statistics, calculate_company_expense_statistics
+from app.services.company_service import get_all_companies
 
 class StatisticsTab(ttk.Frame):
     def __init__(self, parent):

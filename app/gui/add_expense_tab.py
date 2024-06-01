@@ -1,6 +1,6 @@
 from tkinter import ttk, messagebox
-from services.expense_service import add_expense
-from services.company_service import get_all_companies
+from app.services.expense_service import add_expense
+from app.services.company_service import get_all_companies
 
 class AddExpenseTab(ttk.Frame):
     def __init__(self, parent):

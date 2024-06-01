@@ -1,5 +1,5 @@
 from tkinter import ttk, messagebox
-from services.income_service import add_income
+from app.services.income_service import add_income
 
 class AddIncomeTab(ttk.Frame):
     def __init__(self, parent):

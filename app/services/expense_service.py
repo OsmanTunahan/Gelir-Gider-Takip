@@ -1,4 +1,4 @@
-from db.database import get_connection
+from app.db.database import get_connection
 from app.models.expense import Expense
 
 def add_expense(amount, date, description, company_id=None):

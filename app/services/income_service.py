@@ -1,5 +1,5 @@
-from db.database import get_connection
-from models.income import Income
+from app.db.database import get_connection
+from app.models.income import Income
 import mysql.connector
 
 def add_income(amount, date, description=None):

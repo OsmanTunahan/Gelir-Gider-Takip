@@ -1,5 +1,5 @@
 from tkinter import ttk, messagebox
-from services.company_service import add_company
+from app.services.company_service import add_company
 
 class AddCompanyTab(ttk.Frame):
     def __init__(self, parent):

@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
-from gui.add_company_tab import AddCompanyTab
-from gui.add_income_tab import AddIncomeTab
-from gui.add_expense_tab import AddExpenseTab
-from gui.statistics_tab import StatisticsTab
+from app.gui.add_company_tab import AddCompanyTab
+from app.gui.add_income_tab import AddIncomeTab
+from app.gui.add_expense_tab import AddExpenseTab
+from app.gui.statistics_tab import StatisticsTab
 
 class IncomeExpenseTrackerApp:
     def __init__(self, root):
