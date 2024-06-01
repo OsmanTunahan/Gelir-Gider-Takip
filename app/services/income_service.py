@@ -17,3 +17,19 @@ def add_income(amount, date, description=None):
     finally:
         cursor.close()
         conn.close()
+        
+def get_income(id):
+    conn = get_connection()
+    if conn is None:
+        return None
+
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT * FROM income WHERE id = %s", (id,))
+        row = cursor.fetchone()
+        return Income(row[0], row[1], row[2], row[3]) if row else None
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+    finally:
+        cursor.close()
+        conn.close()
