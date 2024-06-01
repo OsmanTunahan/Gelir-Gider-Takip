@@ -14,3 +14,10 @@ def get_company(id):
         cursor.execute("SELECT * FROM companies WHERE id = ?", (id,))
         row = cursor.fetchone()
         return Company(row[0], row[1]) if row else None
+    
+def get_all_companies():
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM companies")
+        rows = cursor.fetchall()
+        return [Company(row[0], row[1]) for row in rows]
