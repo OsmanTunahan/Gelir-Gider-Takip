@@ -1,27 +1,18 @@
-# Gelir-Gider-Takip
-Tüm ayların gelir gider takibinin kolay bir şekilde yapılabileceği Python otomasyonu.
-<hr>
+# Gelir-Gider Takip Projesi
 
-## Veri Tabanı Şeması
-```sql
-CREATE TABLE companies (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL UNIQUE
-);
+Bu proje, gelir ve giderlerinizi takip etmenize yardımcı olmak için oluşturulmuştur. Henüz tamamlanmamış bir projedir ve yeni başladığımı belirtmek için bu README dosyasını oluşturdum.
 
-CREATE TABLE income (
-    id INTEGER PRIMARY KEY,
-    amount REAL NOT NULL,
-    date TEXT NOT NULL,
-    description TEXT
-);
+## Proje Açıklaması
 
-CREATE TABLE expenses (
-    id INTEGER PRIMARY KEY,
-    amount REAL NOT NULL,
-    date TEXT NOT NULL,
-    description TEXT,
-    company_id INTEGER,
-    FOREIGN KEY (company_id) REFERENCES companies(id)
-);
-```
+Bu projenin amacı, kişisel gelir ve giderleri takip etmek için kullanılacak bir uygulama geliştirmektir. Uygulama, kullanıcıların gelir ve giderlerini kaydetmelerine, raporlamalarını görüntülemelerine ve bütçelerini yönetmelerine olanak tanıyacaktır.
+
+## Kurulum
+- TODO: burası hazırlanacak
+
+## Katkıda Bulunma
+
+Bu proje henüz tamamlanmamış olduğu için katkıda bulunmak isterseniz, lütfen bir konu açın veya bir istek gönderin. Katkılarınızı memnuniyetle karşılarız!
+
+## Lisans
+
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.
